@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en" class="h-100">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ICO</title>
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     
     <style>
@@ -22,53 +22,198 @@
           }
         }
       </style>
-    <link href="bootstrap/cover.css" rel="stylesheet">
+    <link href="bootstrap/carousel.css" rel="stylesheet">
+    <link href="bootstrap/footers.css" rel="stylesheet">
 </head>
 
-<body class="d-flex h-100 text-center text-white bg-dark " >
-  
-  <div class=" container-fluid" style="background-image: url('imagenes/fondo.jpeg'); background-position: center ; background-size: 100% auto; ">  
-    
-    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column" >
-      <br>
-      <header class="mb-auto">
-        <div>
-          <h3 class="float-md-start mb-0">Ingeniero en Computación</h3>
-          <nav class="nav nav-masthead justify-content-center float-md-end">
-            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-            <a class="nav-link" href="profesores.html">Profesores</a>
-            <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Sobre la carrera</a>
-            <ul class="dropdown-menu" aria-labelledby="dropdown01">
-              <li><a class="dropdown-item" href="obj.html#obj">Objetivo</a></li>
-              <li><a class="dropdown-item" href="obj.html#mis">Mision</a></li>
-              <li><a class="dropdown-item" href="obj.html#vis">Vision</a></li>
-              <li><a class="dropdown-item" href="perfil.html#PI">Perfil de Ingreso</a></li>
-              <li><a class="dropdown-item" href="perfil.html#PE">Perfil de Egreso</a></li>
-            </ul>
-            <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Planes de Estudio</a>
-            <ul class="dropdown-menu" aria-labelledby="dropdown01">
-            <li><a class="dropdown-item" href="planf3.html">Plan F3</a></li>
-            <li><a class="dropdown-item" href="planf19.html">Plan F19</a></li>
-            </ul>
-          </nav>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top "style="background-color: #325740;">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Ingeniería en Computación</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index2.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="profesores.html">Profesores</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Sobre la carrera</a>
+                <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                  <li><a class="dropdown-item" href="obj.html#obj">Objetivo</a></li>
+                  <li><a class="dropdown-item" href="obj.html#mis">Misión</a></li>
+                  <li><a class="dropdown-item" href="obj.html#vis">Visión</a></li>
+                  <li><a class="dropdown-item" href="perfil.html#PI">Perfil de Ingreso</a></li>
+                  <li><a class="dropdown-item" href="perfil.html#PE">Perfil de Egreso</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Planes de Estudio</a>
+                <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                  <li><a class="dropdown-item" href="planf3.html">Plan F3</a></li>
+                  <li><a class="dropdown-item" href="planf19.html">Plan F19</a></li>
+                </ul>
+              </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-light" type="submit">Search</button>
+          </form>
         </div>
-      </header>
+      </div>
+    </nav>
+  </header>
+    <main>
+
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <svg class="bd-placeholder-img " width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/>
+              <img src="imagenes/expo.jpg" alt="">
+              </svg>
       
-      <main class="px-3">
-        <h1>Cover your page.</h1>
-        <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
-        <p class="lead">
-          <a href="#" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Conoce mas</a>
-        </p>
+              <div class="container">
+                <div class="carousel-caption">
+                  <h1> Semana Nacional de Ciencia y Tecnología 2022.</h1>
+                  <p>Participación en la Divulgación de Ciencia y Tecnología del Cuerpo Académico “Tecnologías Computacionales aplicadas” en el CBT Isaac Newton de Melchor Ocampo</p>
+                  <p><a class="btn btn-lg btn-primary" href="articulo.html ">Leer más. </a></p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/>
+                <img src="imagenes/reunion egresados.jpeg" alt="">
+                </svg>
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>Panel con Egresados ICO 2022</h1>
+                        <p></p>
+                        <p><a class="btn btn-lg btn-primary" href="articulo.html">Leer más.</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+              <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/>
+              <img src="imagenes/reforestacion.jpeg" alt="">
+              </svg>
+      
+              <div class="container">
+                <div class="carousel-caption">
+                  <h1>Reforestación del CUZ.</h1>
+                  <p>Ingeniería en Computación presente en la actividad de reforestación del CUZ. - Destacada participación de alumn@s y docentes ICO.</p>
+                  <p><a class="btn btn-lg btn-primary" href="articulo.html">Leer mas.</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      
+        <div class="container marketing">
+          <div class="container text-center">
+            <h1>Investigadores</h1><br>
+          </div>
+          <div class="row">
+            <div class="col-lg-4">
+              <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+      
+              <h2>DR. EN C. COM. ASDRUBAL LOPEZ CHAU</h2>
+            </div>
+            <div class="col-lg-4">
+              <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+      
+              <h2>DR. EN T.I.E. JORGE BAUTISTA LOPEZ</h2>
+              <p>Coordinador de la carrera</p>
+            </div>
+            <div class="col-lg-4">
+              <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+      
+              <h2>M. EN C. VALENTIN TRUJILLO MORA</h2>
+            </div>
+          </div>
+      
+      
+        
+      
+          <hr class="featurette-divider">
+          <div class="container text-center">
+            <h1>actividades extra curriculares</h1><br>
+          </div>
+          <div class="row featurette">
+            <div class="col-md-7">
+              <h2 class="featurette-heading">Alumnos ICO participando en el torneo de fútbol 7 del CUZ </h2>
+            </div>
+            <div class="col-md-5">
+              <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false" style="background-image: url('imagenes/futbol.jpg') ; background-size: 100% auto;"></svg>
+            </div>
+          </div>
+      
+          <hr class="featurette-divider">
+      
+          <div class="row featurette">
+            <div class="col-md-7 order-md-2">
+              <h2 class="featurette-heading">ICO - 3er. lugar en el concurso de ofrendas 2022.</h2>
+              <p class="lead">Destacada participación e integración de alumn@s y docentes  ICO.
+                ENHORABUENA</p>
+            </div>
+            <div class="col-md-5 order-md-1">
+              <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="290" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false" style="background-image: url('imagenes/ofrenda.jpeg') ; background-size: 100% auto;"></svg>
+      
+            </div>
+          </div>
+      
+          <hr class="featurette-divider">
+      
+          <div class="row featurette">
+            <div class="col-md-7">
+              <h2 class="featurette-heading">Próxima generación a egresar</h2>
+              <p class="lead">35 Aniversario - CU UAEM Zumpango <br>
+                19 - octubre - 2022</p>
+            </div>
+            <div class="col-md-5">
+              <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="290" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false" style="background-image: url('imagenes/generacion.jpg') ; background-size: 100% auto;"></svg>
+      
+            </div>
+          </div>
+      
+          <hr class="featurette-divider">
+      
+      
+        </div>
+      
+      
+        <!-- FOOTER -->
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top" style="background-color: #949300;">
+            <div class="col-md-4 d-flex align-items-center">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
+            </a>
+            <span class="text-light">&copy;  2022 — Sitio Web del Centro Universitario UAEM Zumpango <br> Página de Ing. en Computación.</span>
+            </div>
+        
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3"><a class="text-muted" href="https://www.facebook.com/UAEMex"><svg class="bi" width="24" height="24"><use xlink:href="#bootstrap"/></svg></a></li>
+            </ul>
+        </footer>
       </main>
       
-        <footer class="mt-auto text-white-50">
-            <p>2022 — Sitio Web del Centro Universitario UAEM Zumpango <br> Area de Ing. en Cómputacion.</p>
-        </footer>
-        
-    </div>  
-    
-  </div>
       
           <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
       
